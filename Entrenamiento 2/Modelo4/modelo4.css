@@ -1,0 +1,145 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3.125rem;
+}
+
+.container{
+    display: grid;
+      grid-template-areas:
+        "box1 box2 box4"
+        "box1 box3 box4";
+}
+
+.container2{
+    display: grid;
+    grid-template-areas: "box5 box6";
+}
+
+.a{
+    grid-area: box1;
+    background-color: #d9ead3;
+    border: solid;                
+    padding: 3.25%;           
+}
+
+.b{
+    grid-area: box2;
+    background-color: #fce5cd;
+    border: solid;
+    padding: 3.25%
+}
+
+.c{
+    grid-area: box3;
+    background-color: #fce5cd;
+    border: solid;
+    padding: 3.25%
+}
+
+.d{
+    grid-area: box4;
+    background-color: #d9ead3;
+    border: solid;
+    padding: 3.25%
+}
+
+.e{
+    background-color: #f4cccc;
+    border: solid;
+    padding: 3.25%
+}
+
+.f{
+    background-color: #c9daf8;
+    border: solid;
+    padding: 3.25%
+}
+
+@media (max-width: 768px){
+    .container{
+        display: grid;
+        grid-template-areas:    "a a b"
+                                "c c d";
+    }
+
+    .container2{
+        display: grid;
+        grid-template-areas:    "e e f";
+    }
+
+    .a{
+        grid-area: a;
+    }
+
+    .b{
+        grid-area: b;
+        background-color: #d9ead3;
+    }
+
+    .c{
+        grid-area: c;
+        background-color: #fff2cc;
+    }
+
+    .d{
+        grid-area: d;
+        background-color: #fff2cc;
+    }
+
+    .e{
+        grid-area: e;
+    }
+
+    .f{
+        grid-area: f;
+    }
+}
+
+@media (max-width: 425px){
+    .container{
+        display: grid;
+        grid-template-areas:    "box1 box1"
+                                "box2 box2"
+                                "box3 box3"
+                                "box4 box4";
+
+    }
+
+    .container2{
+        display: grid;
+        grid-template-areas:    "box5 box5"
+                                "box6 box6";
+    }
+
+    .a{
+        grid-area: box1;
+    }
+
+    .b{
+        grid-area: box2;
+        background-color: #d9ead3;
+    }
+
+    .c{
+        grid-area: box3;
+        background-color: #fff2cc;
+    }
+
+    .d{
+        grid-area: box4;
+        background-color: #fff2cc;
+    }
+
+    .e{
+        grid-area: box5;
+        background-color: #c9daf8;
+    }
+
+    .f{
+        grid-area: box6;
+        background-color: #f4cccc;        
+    }
+}
